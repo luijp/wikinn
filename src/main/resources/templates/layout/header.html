@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${ENV_Title_Prefix} + ${Title} + ${ENV_Title_Suffix}">ENV_Title</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+<div class="header">
+    <div class="logo"><a th:text="${ENV_SiteName}" href="#">SiteName</a> </div>
+    <div class="search">
+        <label>
+            <input class="search">
+        </label>
+        <button class="search">搜索</button>
+    </div>
+    <div class="top-menu">
+        <ul>
+            <li><a href="#">主页</a> </li>
+            <li><a href="#">关于</a> </li>
+        </ul>
+    </div>
+</div>
+<div class="header-split"></div>
